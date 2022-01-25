@@ -1,8 +1,8 @@
 import React from 'react';
+import "./Input.css";
 
-function Input({ title, placeholder, name, onChange, type, value }) {
+function Input({ placeholder, name, onChange, type, value }) {
   return <div>
-    <p>{title}</p>
     <input
       type={type}
       name={name}

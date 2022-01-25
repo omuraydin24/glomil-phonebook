@@ -1,0 +1,46 @@
+.contact-item {
+  padding: 0rem 1rem;
+  max-width: 80%;
+  word-wrap: break-word;
+  width: 350px
+}
+.contact {
+  margin: 0.3rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.editable-contact {
+  margin: 0.3rem;
+  background: #4b6cb7;
+  color: rgb(75, 75, 75);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.fa-trash,
+.fa-edit {
+  pointer-events: none;
+  
+}
+
+.trash-btn,
+.edit-btn {
+  background: #ee530b;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  cursor: pointer;
+  width: 50px;
+}
+
+.edit-btn {
+  background: #4b6cb7;
+}

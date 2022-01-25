@@ -1,31 +1,23 @@
 import React from 'react';
-import EditableRow from '../EditableRow';
-import ReadOnlyRow from '../ReadOnlyRow';
+import EditableListCard from '../Cards/ListCard/EditableListCard';
+import ReadOnlyListCard from '../Cards/ListCard/ReadOnlyListCard';
 
 function ContactList({ editContactId, onSubmitEdit, editFormData, handleEditFormChange, handleCancelClick, handleEditClick, handleDeleteClick, contacts }) {
   return (
-    <div>
-      <form onSubmit={onSubmitEdit}>
+    <div className="contacts-container">
+      <form onSubmit={onSubmitEdit} className="contacts-list" >
         <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Phone Number</th>
-              <th>Email</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
           <tbody>
             {contacts.map((contact) => (
               <>
                 {editContactId === contact.id ? (
-                  <EditableRow
+                  <EditableListCard
                     editFormData={editFormData}
                     handleEditFormChange={handleEditFormChange}
                     handleCancelClick={handleCancelClick}
                   />
                 ) : (
-                  <ReadOnlyRow
+                  <ReadOnlyListCard
                     contact={contact}
                     handleEditClick={handleEditClick}
                     handleDeleteClick={handleDeleteClick}

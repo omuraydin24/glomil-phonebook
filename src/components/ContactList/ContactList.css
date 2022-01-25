@@ -1,0 +1,12 @@
+.contacts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-list {
+  min-width: 30%;
+  list-style: none;
+  max-width: 80%;
+}
+
