@@ -140,10 +140,10 @@ const PhoneBook = () => {
         editContactId={editContactId}
         onSubmitEdit={handleEditFormSubmit}
         editFormData={editFormData}
-        handleEditFormChange={handleEditFormChange}
-        handleCancelClick={handleCancelClick}
-        handleEditClick={handleEditClick}
-        handleDeleteClick={handleDeleteClick}
+        onChange={handleEditFormChange}
+        onCancelClick={handleCancelClick}
+        onEditClick={handleEditClick}
+        onDeleteClick={handleDeleteClick}
       />
     </div>
   );

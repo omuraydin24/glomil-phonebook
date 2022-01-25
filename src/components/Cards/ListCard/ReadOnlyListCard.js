@@ -1,32 +1,29 @@
 import React from "react";
 import "./ListCard.css"
-const ReadOnlyRow = ({ contact, handleEditClick, handleDeleteClick }) => {
+const ReadOnlyListCard = ({ contact, onEditClick, onDeleteClick }) => {
   return (
-    <div className="contact">
-      <tr>
-        <td className="contact-item">{contact.fullName}</td>
-        <td className="contact-item">{contact.phoneNumber}</td>
-        <td className="contact-item">{contact.email}</td>
-        <td>
-          <button
-            className="edit-btn"
-            type="button"
-            onClick={(event) => handleEditClick(event, contact)}
-          >
-            <i className="fas fa-pen"></i>
+    <tr className="contact">
+      <td className="contact-item">{contact.fullName}</td>
+      <td className="contact-item">{contact.phoneNumber}</td>
+      <td className="contact-item">{contact.email}</td>
+      <td>
+        <button
+          className="edit-btn"
+          type="button"
+          onClick={(event) => onEditClick(event, contact)}
+        >
+          <i className="fas fa-pen"></i>
 
-          </button>
-          <button
-            className="trash-btn"
-            type="button" onClick={() => handleDeleteClick(contact.id)}>
-            <i className="fas fa-trash"></i>
+        </button>
+        <button
+          className="trash-btn"
+          type="button" onClick={() => onDeleteClick(contact.id)}>
+          <i className="fas fa-trash"></i>
 
-          </button>
-        </td>
-      </tr>
-    </div>
-
+        </button>
+      </td>
+    </tr>
   );
 };
 
-export default ReadOnlyRow;
+export default ReadOnlyListCard;

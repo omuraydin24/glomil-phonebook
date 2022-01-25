@@ -2,7 +2,7 @@ import React from 'react';
 import EditableListCard from '../Cards/ListCard/EditableListCard';
 import ReadOnlyListCard from '../Cards/ListCard/ReadOnlyListCard';
 
-function ContactList({ editContactId, onSubmitEdit, editFormData, handleEditFormChange, handleCancelClick, handleEditClick, handleDeleteClick, contacts }) {
+function ContactList({ editContactId, onSubmitEdit, editFormData, onChange, onCancelClick, onEditClick, onDeleteClick, contacts }) {
   return (
     <div className="contacts-container">
       <form onSubmit={onSubmitEdit} className="contacts-list" >
@@ -13,14 +13,14 @@ function ContactList({ editContactId, onSubmitEdit, editFormData, handleEditForm
                 {editContactId === contact.id ? (
                   <EditableListCard
                     editFormData={editFormData}
-                    handleEditFormChange={handleEditFormChange}
-                    handleCancelClick={handleCancelClick}
+                    onChange={onChange}
+                    onCancelClick={onCancelClick}
                   />
                 ) : (
                   <ReadOnlyListCard
                     contact={contact}
-                    handleEditClick={handleEditClick}
-                    handleDeleteClick={handleDeleteClick}
+                    onEditClick={onEditClick}
+                    onDeleteClick={onDeleteClick}
                   />
                 )}
               </>
