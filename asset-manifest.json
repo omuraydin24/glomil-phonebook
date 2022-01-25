@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/glomil-phonebook/static/css/main.c3d51072.css",
+    "main.js": "/glomil-phonebook/static/js/main.353169ea.js",
+    "static/js/787.3ddab588.chunk.js": "/glomil-phonebook/static/js/787.3ddab588.chunk.js",
+    "index.html": "/glomil-phonebook/index.html",
+    "main.c3d51072.css.map": "/glomil-phonebook/static/css/main.c3d51072.css.map",
+    "main.353169ea.js.map": "/glomil-phonebook/static/js/main.353169ea.js.map",
+    "787.3ddab588.chunk.js.map": "/glomil-phonebook/static/js/787.3ddab588.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3d51072.css",
+    "static/js/main.353169ea.js"
+  ]
+}
