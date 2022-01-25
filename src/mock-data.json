@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "fullName": "John Doe",
+    "phoneNumber": "333-444-5566",
+    "email": "john.doe@email.com"
+  },
+  {
+    "id": 2,
+    "fullName": "Jane Doe",
+    "phoneNumber": "011-211-3346",
+    "email": "jane.doe@email.com"
+  }
+]
